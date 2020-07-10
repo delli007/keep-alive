@@ -1,0 +1,28 @@
+# Website Keep-alive using Selenium
+
+Simple Python Selenium app to keep websites active.  
+Starts Internet Explorer, opens the configured URL's, and reloads those pages every x minutes. 
+ New Windows have to be used with IE due to the selenium driver not being able to get the handle of tabs.  
+
+
+Build
+--------
+A Windows Executable can be generated using pyinstaller:  
+  ``pip install pyinstaller``  
+  ``pyinstaller --onefile --distpath ./ keepalive.py``  
+
+
+Run
+--------
+Install Python >=3.6 and run the following:  
+  ``python -m pip install -r requirements``  
+  ``python keepalive.py``  
+
+
+Requirements
+--------
+ - Python 3  
+ - Selenium  
+ - Selenium driver under drivers/ folder  
+
+
